@@ -7,7 +7,7 @@ const data = reactive({
     '知乎博客 - 您的第2个知乎……',
   ],
   navLinks: [{
-    name: '医学2',
+    name: '医学',
     link: 'https://yixue.zhihu.blog',
   },
   {
@@ -107,7 +107,7 @@ onMounted(() => {
           <div bg-green rounded-full h-3 w-3 />
         </div>
         <div text-4 text-white tracking-widest>
-          小王同学祝您今天快乐
+          知乎同学祝您今天快乐
         </div>
       </div>
     </section>
