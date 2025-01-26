@@ -7,7 +7,7 @@ const data = reactive({
     '知乎博客 - 您的第2个知乎……',
   ],
   navLinks: [{
-    name: '医学',
+    name: '医学2',
     link: 'https://yixue.zhihu.blog',
   },
   {
