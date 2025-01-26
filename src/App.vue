@@ -15,42 +15,77 @@ const data = reactive({
     link: 'https://42195.wangbin.run',
   }],
 
-  myProjects: [{
-    name: 'blog',
-    description: '王彬的独立博客',
-    link: 'https://blog.wangbin.run',
+  zhihuvip: [{
+    name: '人文社科',
+    description: '人文社科',
+    link: 'https://rwsk.zhihu.blog',
   }, {
-    name: 'run',
-    description: '跑步主页',
-    link: 'https://42195.wangbin.run',
+    name: '职场成长',
+    description: '职场成长',
+    link: 'https://zccz.zhihu.blog',
   }, {
-    name: 'wiki',
-    description: '知识库、第二大脑',
-    link: 'https://wiki.wangbin.runn',
+    name: '生活方式',
+    description: '生活方式',
+    link: 'https://shfs.zhihu.blog',
   }, {
-    name: 'biji',
-    description: '小王笔记',
-    link: 'https://yxbj.wangbin.run',
+    name: '技能习得',
+    description: '技能习得',
+    link: 'https://jnxd.zhihu.blog',
   }, {
-    name: 'Camera Tools',
-    description: '摄影工具箱',
-    link: 'https://github.com/sun0225SUN/camera-tools',
+    name: '科技科普',
+    description: '科技科普',
+    link: 'https://kjkp.zhihu.blog',
   }, {
-    name: 'Bicycling',
-    description: '骑行主页',
-    link: 'https://github.com/sun0225SUN/bicycling',
+    name: '商业经济',
+    description: '商业经济',
+    link: 'https://syjj.zhihu.blog',
   }, {
-    name: 'Life Map',
-    description: '人生地图、点亮足迹',
-    link: 'https://github.com/sun0225SUN/life-map',
+    name: '文学',
+    description: '文学',
+    link: 'https://wx.zhihu.blog',
   }, {
-    name: 'Coder',
-    description: '闪闪发光的程序们',
-    link: 'https://github.com/sun0225SUN/coder',
+    name: '小说',
+    description: '小说',
+    link: 'https://xs.zhihu.blog',
   }, {
-    name: 'Starter',
-    description: '前端项目起手架模版',
-    link: 'https://github.com/sun0225SUN/starter',
+    name: '心理情感',
+    description: '心理情感',
+    link: 'https://xlqg.zhihu.blog',
+  },
+  {
+    name: '历史',
+    description: '历史',
+    link: 'https://ls.zhihu.blog',
+  },
+  {
+    name: '互联网',
+    description: '互联网',
+    link: 'https://hlw.zhihu.blog',
+  },
+  {
+    name: '计算机',
+    description: '计算机',
+    link: 'https://jsj.zhihu.blog',
+  },
+  {
+    name: '艺术',
+    description: '艺术',
+    link: 'https://ys.zhihu.blog',
+  },
+  {
+    name: '教育',
+    description: '教育',
+    link: 'https://jy.zhihu.blog',
+  },
+  {
+    name: '医学健康',
+    description: '医学健康',
+    link: 'https://yxjk.zhihu.blog',
+  },
+  {
+    name: '知乎出品',
+    description: '知乎出品',
+    link: 'https://zh.zhihu.blog',
   }],
 
   socialLinks: [{
@@ -145,10 +180,10 @@ onMounted(() => {
 
       <!-- 我的项目 -->
       <div text-bold mb-2 ml-10 text-8 text-white>
-        项目
+        知乎会员
       </div>
       <div mb-10 flex flex-wrap justify-between>
-        <div v-for="(item, index) in data.myProjects" :key="index" mx-10 my-4 class="basis-3/4 md:basis-1/6">
+        <div v-for="(item, index) in data.zhihuvip" :key="index" mx-10 my-4 class="basis-3/4 md:basis-1/6">
           <a :href="item.link">
             <div class="bg-white/5 hover:bg-white/10" p-2 rounded-lg shadow-md flex-col transition backdrop-blur-3xl backdrop-opacity-60 hover:backdrop-opacity-100 hover:-translate-y-2>
               <div text-bold opacity-75 text-6 text-white>
